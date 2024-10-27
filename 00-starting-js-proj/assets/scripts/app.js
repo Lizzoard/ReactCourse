@@ -47,4 +47,12 @@ import apiKey from "./utils.js";
 
 // console.log(firstName);
 // console.log(lastName);
+
+const { name: userName, age } = {
+  name: "John",
+  age: 43
+};
+
+console.log(userName);
+console.log(age);
  
