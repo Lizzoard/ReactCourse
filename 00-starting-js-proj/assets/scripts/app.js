@@ -48,11 +48,50 @@ import apiKey from "./utils.js";
 // console.log(firstName);
 // console.log(lastName);
 
-const { name: userName, age } = {
-  name: "John",
-  age: 43
-};
+// const { name: userName, age } = {
+//   name: "John",
+//   age: 43
+// };
 
-console.log(userName);
-console.log(age);
+// console.log(userName);
+// console.log(age);
  
+// Example for Destructuring in Function Parameter Lists
+
+// function storeOrder(order) {
+//   localStorage.setItem('id', order.id);
+//   localStorage.setItem('currency', currency);
+// }
+
+/* Instead of accessing the order properties via "dot notation"
+    inside the storeOrder function body, you could use destructuring
+    like this:
+*/
+
+// function storeOrder({ id, currency }) {
+//   localStorage.setItem('id', id);
+//   localStorage.setItem('currency', currency);
+// }
+
+// Using spread operator to merge two arrays 
+
+// const hobbies = ["Sports", "Cooking"];
+// const newHobbies = ["Gaming", "Reading", "Languages"];
+
+// const mergedHobbies = [...hobbies, ...newHobbies];
+// console.log(mergedHobbies);
+
+// Using spread operator to merge objects
+
+// const user = {
+//   name: "John",
+//   age: 43
+// }
+
+// const extendedUser = {
+//   isAdmin: true,
+//   ...user
+// }
+
+// console.log(extendedUser);
+
